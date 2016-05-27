@@ -86,13 +86,13 @@ class InitialScreenController: UICollectionViewController {
         NSLog("Inside prepareForSegue")
         NSLog("Identifier is: \(segue.identifier)")
         if segue.identifier == "campusBuildings" {
-           let viewController:UINavigationController = segue.destinationViewController as! UINavigationController
+           let viewController:BuildingViewController = segue.destinationViewController as! BuildingViewController
 
             if let indexPath = self.collectionView?.indexPathForCell(sender as! UICollectionViewCell) {
                 
             let selectedCampus = campuses[(indexPath.row)]
             NSLog("selectedCampus \(selectedCampus)")
-            //viewController. campus=selectedCampus
+            viewController.campus = selectedCampus
         }
 
     }
