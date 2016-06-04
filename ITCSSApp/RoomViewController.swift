@@ -44,5 +44,20 @@ class RoomViewController : UITableViewController
         cell.textLabel?.text = room.name
         return cell
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        NSLog("Identifier is: \(segue.identifier)")
+        if segue.identifier == "Tasks" {
+            let viewController:ActionRunController = segue.destinationViewController as! ActionRunController
+            
+            let indexPath = self.tableView.indexPathForSelectedRow!
+            
+            let selectedRoom=rooms[indexPath.row];
+            NSLog("Selected index is: \(indexPath.row)")
+            NSLog("Selected Movie is:\(selectedRoom)")
+            // viewController.movies = self.movies
+            viewController.shift  = "Afternoon"
+        }
+    }
+
 }
 

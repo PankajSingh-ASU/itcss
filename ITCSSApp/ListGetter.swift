@@ -61,13 +61,13 @@ class ListGetter
         var list = [Room]()
         if( campus == "Polytechnic" && building == "Peralta")
         {
-            var room1 : Room = Room(building: building, name: "Per150", number: "150", type: "Class")
+            var room1 : Room = Room(building: building, name: "PA150", number: "150", type: "Class")
             list.append(room1)
-            room1 = Room(building: building, name: "Per210", number: "210", type: "Class")
+            room1 = Room(building: building, name: "PA210", number: "210", type: "Class")
             list.append(room1)
-            room1 = Room(building: building, name: "Per213", number: "213", type: "Lab")
+            room1 = Room(building: building, name: "PA213", number: "213", type: "Lab")
             list.append(room1)
-            room1 = Room(building: building, name: "Per303", number: "303", type: "Class")
+            room1 = Room(building: building, name: "PA303", number: "303", type: "Class")
             list.append(room1)
            // room1 = Room(building: building, name: "Per150", number: "150", type: "Class")
             
