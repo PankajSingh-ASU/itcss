@@ -14,6 +14,7 @@
 		39104DD91CF79D5F00F07246 /* ListGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39104DD81CF79D5F00F07246 /* ListGetter.swift */; };
 		39104DDB1CF7DAEA00F07246 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */; };
 		39104DDD1CF7DD2C00F07246 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39104DDC1CF7DD2C00F07246 /* Room.swift */; };
+		394ADDDB1D06B33F00581AB3 /* ActionRunViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394ADDDA1D06B33F00581AB3 /* ActionRunViewCell.swift */; };
 		396858EF1CEE35FE0032F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396858EE1CEE35FE0032F668 /* AppDelegate.swift */; };
 		396858F11CEE35FE0032F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396858F01CEE35FE0032F668 /* ViewController.swift */; };
 		396858F41CEE35FE0032F668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396858F21CEE35FE0032F668 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		39104DD81CF79D5F00F07246 /* ListGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListGetter.swift; sourceTree = "<group>"; };
 		39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		39104DDC1CF7DD2C00F07246 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		394ADDDA1D06B33F00581AB3 /* ActionRunViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionRunViewCell.swift; sourceTree = "<group>"; };
 		396858EB1CEE35FE0032F668 /* ITCSSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITCSSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396858EE1CEE35FE0032F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		396858F01CEE35FE0032F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,23 +121,24 @@
 		396858ED1CEE35FE0032F668 /* ITCSSApp */ = {
 			isa = PBXGroup;
 			children = (
-				396858EE1CEE35FE0032F668 /* AppDelegate.swift */,
-				396858F01CEE35FE0032F668 /* ViewController.swift */,
-				39F109CF1D02BE0200CF4D18 /* ActionRunController.swift */,
-				39F109D31D02C4C600CF4D18 /* ActionRunsSet.swift */,
-				396858F21CEE35FE0032F668 /* Main.storyboard */,
-				39104DD01CF3CAA500F07246 /* InitialScreenController.swift */,
-				39104DD61CF773A300F07246 /* BuildingViewController.swift */,
-				39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */,
-				39104DDC1CF7DD2C00F07246 /* Room.swift */,
-				39104DD81CF79D5F00F07246 /* ListGetter.swift */,
-				39104DD41CF6CC7200F07246 /* InitialSupplimentaryView.swift */,
-				396858F81CEE35FE0032F668 /* Assets.xcassets */,
-				396858FA1CEE35FE0032F668 /* LaunchScreen.storyboard */,
-				396858FD1CEE35FE0032F668 /* Info.plist */,
-				396858F51CEE35FE0032F668 /* ITCSSApp.xcdatamodeld */,
-				39104DD21CF52A9500F07246 /* InitialViewCell.swift */,
 				39F109D11D02C2E700CF4D18 /* ActionRun.swift */,
+				39F109CF1D02BE0200CF4D18 /* ActionRunController.swift */,
+				394ADDDA1D06B33F00581AB3 /* ActionRunViewCell.swift */,
+				39F109D31D02C4C600CF4D18 /* ActionRunsSet.swift */,
+				396858EE1CEE35FE0032F668 /* AppDelegate.swift */,
+				396858F81CEE35FE0032F668 /* Assets.xcassets */,
+				39104DD61CF773A300F07246 /* BuildingViewController.swift */,
+				396858FD1CEE35FE0032F668 /* Info.plist */,
+				39104DD01CF3CAA500F07246 /* InitialScreenController.swift */,
+				39104DD41CF6CC7200F07246 /* InitialSupplimentaryView.swift */,
+				39104DD21CF52A9500F07246 /* InitialViewCell.swift */,
+				396858F51CEE35FE0032F668 /* ITCSSApp.xcdatamodeld */,
+				396858FA1CEE35FE0032F668 /* LaunchScreen.storyboard */,
+				39104DD81CF79D5F00F07246 /* ListGetter.swift */,
+				396858F21CEE35FE0032F668 /* Main.storyboard */,
+				39104DDC1CF7DD2C00F07246 /* Room.swift */,
+				39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */,
+				396858F01CEE35FE0032F668 /* ViewController.swift */,
 			);
 			path = ITCSSApp;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				396858F71CEE35FE0032F668 /* ITCSSApp.xcdatamodeld in Sources */,
 				39F109D41D02C4C600CF4D18 /* ActionRunsSet.swift in Sources */,
 				39F109D01D02BE0200CF4D18 /* ActionRunController.swift in Sources */,
+				394ADDDB1D06B33F00581AB3 /* ActionRunViewCell.swift in Sources */,
 				39104DD71CF773A300F07246 /* BuildingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

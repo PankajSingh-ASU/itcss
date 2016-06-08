@@ -12,6 +12,8 @@ import UIKit
 class ActionRunController: UITableViewController {
     var tasks:[ActionRun] = [ActionRun]()
     var shift: String=""
+    let checkedColor = UIColor.greenColor()
+    let issueColor = UIColor.redColor()
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("viewDidLoad in ActionRunController view controller")
@@ -42,4 +44,15 @@ class ActionRunController: UITableViewController {
         cell.detailTextLabel?.text = task.description
         return cell
 }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let task: ActionRun=tasks[indexPath.row]
+        task.checked = true
+        let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        //selectedCell.backgroundColor = UIColor.greenColor()
+        selectedCell.contentView.backgroundColor = checkedColor
+    }
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let task: ActionRun=tasks[indexPath.row]
+        task.checked = false
+    }
 }

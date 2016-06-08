@@ -50,8 +50,20 @@ class ActionRunsSet
     }
     func  getRoutineTask()->[ActionRun]
     {
+        /**
+         Check clocks, lights, ceiling & wall damage
+         Cleanliness of the room
+         Log into Windows and Mac OS
+         Projector image, doc cam and audio check
+ */
         var task:[ActionRun]=[ActionRun]()
-        var task1 : ActionRun = ActionRun(name: "task1",description: "task1 Descriotion")
+        var task1 : ActionRun = ActionRun(name: "Electrical Equipments",description: "Check clocks, lights, ceiling & wall damage")
+        task.append(task1)
+        task1 = ActionRun(name: "Cleanliness",description: "Cleanliness of the room")
+        task.append(task1)
+        task1 = ActionRun(name: "Computer Login",description: "Log into Windows and Mac OS")
+        task.append(task1)
+        task1 = ActionRun(name: "Peripheral Devices",description: "Projector image, doc cam and audio check")
         task.append(task1)
         task1 = ActionRun(name: "task2",description: "task2 Descriotion")
         task.append(task1)
