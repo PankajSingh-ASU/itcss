@@ -9,4 +9,7 @@
 import UIKit
 class ActionRunViewCell : UITableViewCell{
     
+    @IBOutlet weak var issueButton: UIButton!
+    @IBOutlet weak var subTitle: UILabel!
+    @IBOutlet weak var title: UILabel!
 }

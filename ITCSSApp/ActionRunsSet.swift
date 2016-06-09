@@ -57,7 +57,7 @@ class ActionRunsSet
          Projector image, doc cam and audio check
  */
         var task:[ActionRun]=[ActionRun]()
-        var task1 : ActionRun = ActionRun(name: "Electrical Equipments",description: "Check clocks, lights, ceiling & wall damage")
+        var task1 : ActionRun = ActionRun(name: "Electrical Equipment",description: "Check clocks, lights, ceiling & wall damage")
         task.append(task1)
         task1 = ActionRun(name: "Cleanliness",description: "Cleanliness of the room")
         task.append(task1)
@@ -65,11 +65,11 @@ class ActionRunsSet
         task.append(task1)
         task1 = ActionRun(name: "Peripheral Devices",description: "Projector image, doc cam and audio check")
         task.append(task1)
-        task1 = ActionRun(name: "task2",description: "task2 Descriotion")
+        task1 = ActionRun(name: "task2",description: "task2 Description")
         task.append(task1)
-        task1 = ActionRun(name: "task3",description: "task3 Descriotion")
+        task1 = ActionRun(name: "task3",description: "task3 Description")
         task.append(task1)
-        task1 = ActionRun(name: "task4",description: "task4 Descriotion")
+        task1 = ActionRun(name: "task4",description: "task4 Description")
         task.append(task1)
         return task
     }
