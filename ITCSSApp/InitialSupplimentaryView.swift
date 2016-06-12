@@ -9,6 +9,7 @@ import UIKit
 
 class InitialSupplimentaryView: UICollectionReusableView {
     
+    @IBOutlet weak var reporter: UITextField!
   
     @IBOutlet weak var headerLabel: UILabel!
     

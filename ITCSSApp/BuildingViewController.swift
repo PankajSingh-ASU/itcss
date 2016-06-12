@@ -11,6 +11,7 @@ import UIKit
 class BuildingViewController : UITableViewController
 {
     var campus: String = ""
+    var reporter = ""
      var names:[String] = [String]()
     // MARK: - Table view data source
     
@@ -49,12 +50,13 @@ class BuildingViewController : UITableViewController
             
             let indexPath = self.tableView.indexPathForSelectedRow!
             
-            let selectedMovie=names[indexPath.row];
+            let selectedBuilding=names[indexPath.row];
             NSLog("Selected index is: \(indexPath.row)")
-            NSLog("Selected Movie is:\(selectedMovie)")
+            NSLog("Selected Movie is:\(selectedBuilding)")
             // viewController.movies = self.movies
             viewController.building = names[indexPath.row]
             viewController.campus = self.campus
+            viewController.reporter = self.reporter
     }
     }
 }

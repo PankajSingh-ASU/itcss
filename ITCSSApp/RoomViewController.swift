@@ -13,6 +13,9 @@ class RoomViewController : UITableViewController
     var campus: String = ""
     var building: String = ""
     var rooms:[Room] = [Room]()
+    var reporter = ""
+    var reportDetails:ReportDetails = ReportDetails()
+
     // MARK: - Table view data source
     
     override func viewDidLoad() {
@@ -53,9 +56,14 @@ class RoomViewController : UITableViewController
             
             let selectedRoom=rooms[indexPath.row];
             NSLog("Selected index is: \(indexPath.row)")
-            NSLog("Selected Movie is:\(selectedRoom)")
+            NSLog("Selected room is:\(selectedRoom.name)")
             // viewController.movies = self.movies
             viewController.shift  = "Afternoon"
+            reportDetails.campus=self.campus
+            reportDetails.building = self.building
+            reportDetails.room = selectedRoom
+            reportDetails.reporter = self.reporter
+            viewController.reportDetails = reportDetails
         }
     }
 

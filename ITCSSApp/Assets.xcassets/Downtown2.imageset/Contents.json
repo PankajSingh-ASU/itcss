@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Poly.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Downtown2.jpg",
       "scale" : "2x"
     },
     {

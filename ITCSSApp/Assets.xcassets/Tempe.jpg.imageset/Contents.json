@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "ASU_Tempe.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ASU_Tempe.jpg",
       "scale" : "2x"
     },
     {

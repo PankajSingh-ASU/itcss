@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class InitialScreenController: UICollectionViewController {
-
     let reuseIdentifier = "campus"
     var  cellDimension : CGSize?
+    var header: InitialSupplimentaryView?
     var campuses = [String]()
     var campuseImages = [String]()
     override func viewDidLoad() {
@@ -34,11 +34,11 @@ class InitialScreenController: UICollectionViewController {
         ]
     }
     override func numberOfSectionsInCollectionView(collectionView:
-        UICollectionView!) -> Int {
+        (UICollectionView!)) -> Int {
         return 1
     }
     
-    override func collectionView(collectionView: UICollectionView!,
+    override func collectionView(collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
         return campuses.count
     }
@@ -50,7 +50,7 @@ class InitialScreenController: UICollectionViewController {
         // Configure the cell
         let image = UIImage(named: campuseImages[indexPath.row])
         cell.imageView.image = image
-        //cell.imageView.frame = CGRectMake(0,0,cellDimension!.height,cellDimension!.width)
+        cell.imageView.frame.size = CGSize(width: cellDimension!.height-4,height: cellDimension!.width)
         cell.name.text = campuses[indexPath.row]
         
         return cell
@@ -60,7 +60,7 @@ class InitialScreenController: UICollectionViewController {
                                                                    atIndexPath indexPath: NSIndexPath)
         -> UICollectionReusableView {
             
-            var header: InitialSupplimentaryView?
+            
             
             if kind == UICollectionElementKindSectionHeader {
                 header =
@@ -77,8 +77,9 @@ class InitialScreenController: UICollectionViewController {
                                sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         let picDimension = self.view.frame.size.width / 2
-        //let picDimensionLength = self.view.frame.size.height / 3
-        cellDimension = CGSizeMake(picDimension-10, picDimension)
+        let picDimensionheight = self.view.frame.size.height / 3
+    
+        cellDimension = CGSizeMake(picDimension-5, picDimensionheight-2)
         return cellDimension!
         //return CGSizeMake(picDimension-1, picDimension-1)
     }
@@ -92,7 +93,9 @@ class InitialScreenController: UICollectionViewController {
                 
             let selectedCampus = campuses[(indexPath.row)]
             NSLog("selectedCampus \(selectedCampus)")
+            NSLog("Reporter is :\((header?.reporter.text!)!)")
             viewController.campus = selectedCampus
+            viewController.reporter =  (header?.reporter.text!)!
         }
 
     }
