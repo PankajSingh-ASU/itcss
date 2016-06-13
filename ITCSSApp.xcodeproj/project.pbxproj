@@ -15,6 +15,9 @@
 		39104DDB1CF7DAEA00F07246 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */; };
 		39104DDD1CF7DD2C00F07246 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39104DDC1CF7DD2C00F07246 /* Room.swift */; };
 		394ADDDB1D06B33F00581AB3 /* ActionRunViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394ADDDA1D06B33F00581AB3 /* ActionRunViewCell.swift */; };
+		394ADDDD1D0B983C00581AB3 /* EmailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394ADDDC1D0B983C00581AB3 /* EmailComposer.swift */; };
+		394ADDDF1D0BB87B00581AB3 /* EmailDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394ADDDE1D0BB87B00581AB3 /* EmailDetails.swift */; };
+		394ADDE11D0BD71F00581AB3 /* ReportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394ADDE01D0BD71F00581AB3 /* ReportDetails.swift */; };
 		396858EF1CEE35FE0032F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396858EE1CEE35FE0032F668 /* AppDelegate.swift */; };
 		396858F11CEE35FE0032F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396858F01CEE35FE0032F668 /* ViewController.swift */; };
 		396858F41CEE35FE0032F668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396858F21CEE35FE0032F668 /* Main.storyboard */; };
@@ -54,6 +57,9 @@
 		39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		39104DDC1CF7DD2C00F07246 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		394ADDDA1D06B33F00581AB3 /* ActionRunViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionRunViewCell.swift; sourceTree = "<group>"; };
+		394ADDDC1D0B983C00581AB3 /* EmailComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailComposer.swift; sourceTree = "<group>"; };
+		394ADDDE1D0BB87B00581AB3 /* EmailDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDetails.swift; sourceTree = "<group>"; };
+		394ADDE01D0BD71F00581AB3 /* ReportDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportDetails.swift; sourceTree = "<group>"; };
 		396858EB1CEE35FE0032F668 /* ITCSSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITCSSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396858EE1CEE35FE0032F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		396858F01CEE35FE0032F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 			children = (
 				39F109D11D02C2E700CF4D18 /* ActionRun.swift */,
 				39F109CF1D02BE0200CF4D18 /* ActionRunController.swift */,
+				394ADDE01D0BD71F00581AB3 /* ReportDetails.swift */,
+				394ADDDE1D0BB87B00581AB3 /* EmailDetails.swift */,
 				394ADDDA1D06B33F00581AB3 /* ActionRunViewCell.swift */,
 				39F109D31D02C4C600CF4D18 /* ActionRunsSet.swift */,
 				396858EE1CEE35FE0032F668 /* AppDelegate.swift */,
@@ -136,6 +144,7 @@
 				396858FA1CEE35FE0032F668 /* LaunchScreen.storyboard */,
 				39104DD81CF79D5F00F07246 /* ListGetter.swift */,
 				396858F21CEE35FE0032F668 /* Main.storyboard */,
+				394ADDDC1D0B983C00581AB3 /* EmailComposer.swift */,
 				39104DDC1CF7DD2C00F07246 /* Room.swift */,
 				39104DDA1CF7DAEA00F07246 /* RoomViewController.swift */,
 				396858F01CEE35FE0032F668 /* ViewController.swift */,
@@ -304,10 +313,13 @@
 				396858EF1CEE35FE0032F668 /* AppDelegate.swift in Sources */,
 				39104DD11CF3CAA500F07246 /* InitialScreenController.swift in Sources */,
 				39104DDB1CF7DAEA00F07246 /* RoomViewController.swift in Sources */,
+				394ADDE11D0BD71F00581AB3 /* ReportDetails.swift in Sources */,
 				396858F71CEE35FE0032F668 /* ITCSSApp.xcdatamodeld in Sources */,
+				394ADDDD1D0B983C00581AB3 /* EmailComposer.swift in Sources */,
 				39F109D41D02C4C600CF4D18 /* ActionRunsSet.swift in Sources */,
 				39F109D01D02BE0200CF4D18 /* ActionRunController.swift in Sources */,
 				394ADDDB1D06B33F00581AB3 /* ActionRunViewCell.swift in Sources */,
+				394ADDDF1D0BB87B00581AB3 /* EmailDetails.swift in Sources */,
 				39104DD71CF773A300F07246 /* BuildingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,10 +462,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ITCSSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.uto.itcss.ITCSSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.uto.itcss.ITCSSApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -461,10 +475,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ITCSSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.uto.itcss.ITCSSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.asu.uto.itcss.ITCSSApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
